@@ -328,3 +328,82 @@ span{
     pointer-events: auto;
     
 }
+}
+
+@media screen and (max-width: 750px) {
+                
+
+                /* REMOVE ALL ANIMATIONS */
+                *,
+                *::before,
+                *::after {
+                    animation: none !important;
+                    transition: none !important;
+                }
+
+                /* REMOVE HEADER (OPTIONAL – KEEP IF YOU WANT) */
+                .header {
+                    display: none;
+                }
+
+                /* REMOVE SIDE LINE */
+                .education-column .education-box {
+                    border-left: none;
+                }
+
+                /* REMOVE CONTENT BOXES */
+                .education-content .content {
+                    border: none;
+                    padding: 0;
+                    margin-bottom: 1.5rem;
+                }
+
+                /* REMOVE OVERLAY BLOCKERS */
+                .education-content .content::before,
+                .education-column .education-box::before,
+                .education-content h3::before,
+                .education-content p::before,
+                .education-content .year::before,
+                .education .heading::before {
+                    display: none;
+                }
+
+                /* RESET LAYOUT PADDING */
+                .education {
+                    padding-left: 1rem;
+                    padding-right: 1rem;
+                    padding-top: 2rem;
+                }
+
+                /* YEAR */
+                .education-content .year {
+                    font-size: 12px;
+                    margin-bottom: 4px;
+                }
+
+                /* TITLE */
+                .education-content h3 {
+                    font-size: 14px;
+                    margin-bottom: 6px;
+                }
+
+                /* PARAGRAPH */
+                .education-content p {
+                    font-size: 12px;
+                    line-height: 1.6;
+                    text-align: justify;
+                    text-justify: inter-word;
+                }
+
+                /* REMOVE ICON POSITION ISSUE */
+                i {
+                    position: static;
+                }
+
+                /* BUTTON SIZE */
+                .btn-box a {
+                    width: 120px;
+                    height: 40px;
+                    font-size: 14px;
+                }
+}
