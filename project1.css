@@ -1,43 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
+/* =====================
+   GLOBAL STYLES
+   ===================== */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     background: #041827;
+    color: #ededed;
 }
 
-body{
-        color: #ededed;
+/* =====================
+   HEADER
+   ===================== */
 
-}
-
-.header{
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 40px;
-    padding-left: 50px;
-    background: transparent;
+    padding: 40px 50px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     z-index: 100;
 }
 
-.logo{
+.logo {
     position: relative;
     font-size: 25px;
     color: #00abf0;
-    text-decoration: none;
     font-weight: 600;
+    text-decoration: none;
 }
 
-.logo::before{
+.logo::before {
     content: '';
     position: absolute;
     top: 0;
@@ -49,60 +51,61 @@ body{
     animation-delay: .4s;
 }
 
-body{
-        color: #ededed;
-        background: #041827;
-        font-size: 10px;
+/* =====================
+   SECTION LAYOUT
+   ===================== */
 
-}
-
-.header{
-    position: fixed;
-    justify-content: space-between;
-    text-decoration: none;
-    width: 0;
-    height: 0;
-}
-
-i{
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
-    display: flex;
-    justify-content: space-between;
-}
-
-
-.education{
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto;
+.education {
+    padding-top: 100px;
     padding-bottom: 5rem;
     padding-left: 20%;
     padding-right: 20%;
-}
-
-.education .education-row{
     display: flex;
-    flex-wrap: wrap;
-    gap: 5rem; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.education-row .education-column{
-    flex: 1 1 40rem;
+.education-row {
+    width: 100%;
 }
 
-.education-column .title{
+.heading {
+    position: relative;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
+    z-index: 2;
+}
+
+.heading::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: #041827;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+    z-index: -1;
+}
+
+span {
+    color: #00abf0;
+}
+
+/* =====================
+   PROJECT STRUCTURE
+   ===================== */
+
+.education-column .title {
     position: relative;
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
     color: aquamarine;
+    margin-bottom: 2rem;
 }
 
-.education-column .title::before{
+.education-column .title::before {
     content: '';
     position: absolute;
     top: 0;
@@ -114,32 +117,47 @@ i{
     animation-delay: 1.4s;
 }
 
-.education-column .education-box{
+.education-box {
     border-left: .2rem solid #00abf0;
 }
-.education-box .education-content{
-    position: relative;
+
+.education-content {
     padding-left: 2rem;
 }
 
-.education-content .content{
+.education-content .content {
     position: relative;
     padding: 1.5rem;
     border: .2rem solid #00abf0;
     border-radius: .6rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
 }
 
+/* =====================
+   PROJECT IMAGE
+   ===================== */
 
-.education-content h3{
-    padding-top: 0;
+.project-img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(0, 171, 240, 0.5);
+}
+
+/* =====================
+   TEXT STYLES
+   ===================== */
+
+.education-content h3 {
     position: relative;
-    font-size: 30px;
+    font-size: 24px;
     color: #00abf0;
-
+    margin-bottom: .5rem;
 }
 
-.education-content h3::before{
+.education-content h3::before {
     content: '';
     position: absolute;
     top: 0;
@@ -151,15 +169,13 @@ i{
     animation-delay: 2.5s;
 }
 
-
-
-.education-content p{
+.education-content p {
     position: relative;
     font-size: 15px;
-
+    line-height: 1.6;
 }
 
-.education-content p::before{
+.education-content p::before {
     content: '';
     position: absolute;
     top: 0;
@@ -171,104 +187,109 @@ i{
     animation-delay: 3s;
 }
 
-.education .heading{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
+/* =====================
+   BUTTON
+   ===================== */
+
+.btn-box {
+    margin-top: 1rem;
 }
 
-.education .heading::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1s;
-}
-
-span{
-    color: #00abf0;
-}
-
-
-
-
-
-
-
-
-
-
-
-.btn-box a{
-    position: relative;
+.btn-box a {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
     height: 50px;
     background: #00abf0;
-    border: 2px solid #00abf0;
     border-radius: 8px;
-    font-size: 19px;
     color: #041827;
-    text-decoration: none;
+    font-size: 19px;
     font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
+    text-decoration: none;
     transition: .5s;
 }
 
-.btn-box a:hover{
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2){
+.btn-box a:hover {
     background: transparent;
     color: #00abf0;
+    border: 2px solid #00abf0;
 }
 
-.btn-box a:nth-child(2):hover{
-    color: #041827;
-}
-
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
-}
-
-.btn-box a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: #041827;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before{
-    width: 100%;
-}
-
-
-
-
-/*KEYFRAMES ANIMATIONS*/
+/* =====================
+   KEYFRAME ANIMATIONS
+   ===================== */
 
 @keyframes showRight {
-    100%{
+    100% {
         width: 0;
     }
-    
 }
-@keyframes manipActiveHover {
-    100%{
-    pointer-events: auto;
-    
-}}
+
+/* =====================================================
+   MOBILE ONLY (CLEAN VERSION — DESKTOP UNAFFECTED)
+   ===================================================== */
+
+@media (max-width: 768px) {
+
+    /* Disable ONLY animated overlays */
+    .logo::before,
+    .heading::before,
+    .education-column .title::before,
+    .education-content h3::before,
+    .education-content p::before {
+        animation: none !important;
+        display: none !important;
+    }
+
+    /* Hide header on mobile */
+    .header {
+        display: none;
+    }
+
+    /* Remove timeline & boxes */
+    .education-box {
+        border-left: none;
+    }
+
+    .education-content {
+        padding-left: 0;
+    }
+
+    .education-content .content {
+        border: none;
+        padding: 0;
+        margin-bottom: 2rem;
+    }
+
+    /* Equal padding on both sides */
+    .education {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 2rem;
+    }
+
+    /* Image sizing */
+    .project-img {
+        max-height: 180px;
+    }
+
+    /* Mobile typography */
+    .education-content h3 {
+        font-size: 14px;
+    }
+
+    .education-content p {
+        font-size: 12px;
+        line-height: 1.6;
+        text-align: justify;
+        text-justify: inter-word;
+    }
+
+    /* Button */
+    .btn-box a {
+        width: 120px;
+        height: 38px;
+        font-size: 14px;
+    }
+}
