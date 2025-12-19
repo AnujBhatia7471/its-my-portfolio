@@ -271,8 +271,21 @@ form {
     pointer-events: auto;
     
 }
+}
 
+@media screen and (max-width: 750px) {
+    .header {
+        display: none !important;
+    }
+    
+    .move {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0; /* remove previous padding */
+    }
 
-
-
-
+    .move .btn-box {
+        padding-right: 0; /* remove the old padding */
+    }
+}
