@@ -10,6 +10,7 @@
     background: #041827;
 }
 
+
 body{
         color: #ededed;
 
@@ -235,16 +236,19 @@ span{
 /*KEYFRAMES ANIMATIONS*/
 
 @keyframes showRight {
-    100%{
+    100% {
         width: 0;
     }
-    
 }
+
 @keyframes manipActiveHover {
-    100%{
-    pointer-events: auto;
-    
+    100% {
+        pointer-events: auto;
+    }
 }
+
+
+
 
 @media screen and (max-width: 750px) {
     .header {
