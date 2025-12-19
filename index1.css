@@ -143,8 +143,14 @@ body{
 @media (max-width: 770px) {
     body {
         background: #0a1f3c; /* dark blue color */
-        background-image: none !important; /* remove image */
+        background-image: none !important; /* remove image */ 
     }
+    .home-content {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.7;
+    padding-right: 30px;
+                    }
 }
 @media (max-width: 1000px) {
     
