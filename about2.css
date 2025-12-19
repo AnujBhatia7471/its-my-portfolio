@@ -245,3 +245,15 @@ span{
     pointer-events: auto;
     
 }
+
+@media screen and (max-width: 750px) {
+    .header {
+        display: none !important;
+            }
+    .about-content p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.7;
+    padding-right: 40px;
+                    }
+}
