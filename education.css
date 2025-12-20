@@ -1,409 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'poppins' , sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     background: #041827;
+    color: #ededed;
 }
 
-body{
-        color: #ededed;
-
-}
-.header{
+/* ================= HEADER ================= */
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding-top: 40px;
-    padding-left: 50px;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 40px 50px;
     z-index: 100;
 }
 
-.logo{
-    position: relative;
+.logo {
     font-size: 25px;
     color: #00abf0;
     text-decoration: none;
     font-weight: 600;
 }
 
-.logo::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: .4s;
-}
+/* ================= EDUCATION ================= */
+.education {
+    padding-top: 120px;
+    padding-bottom: 4rem;
 
-body{
-        color: #ededed;
-        background: #041827;
-        font-size: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
 
-}
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-.header{
-    position: fixed;
-    justify-content: space-between;
-    text-decoration: none;
-    width: 0;
-    height: 0;
-}
-
-i{
-    position: absolute;
-    bottom: 40px;
-    width: 170px;
     display: flex;
-    justify-content: space-between;
-}
-
-
-.education{
-    padding-top: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    min-height: auto;
-    padding-bottom: 5rem;
-    padding-left: 20%;
-    padding-right: 20%;
+    align-items: center;
 }
 
-.education .education-row{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem; 
+.education .heading {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3rem;
 }
 
-.education-row .education-column{
-    flex: 1 1 40rem;
+span {
+    color: #00abf0;
 }
 
-.education-column .title{
-    position: relative;
+.education-row {
+    width: 100%;
+}
+
+.education-column .title {
     font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem;
     color: aquamarine;
-}
-
-.education-column .title::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.4s;
-}
-
-.education-column .education-box{
-    position: relative;
-    border-left: .2rem solid red;
-}
-
-.education-column .education-box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
-}
-.education-box .education-content{
-    position: relative;
-    padding-left: 2rem;
-}
-
-.education-content .content{
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid red;
-    border-radius: .6rem;
     margin-bottom: 2rem;
 }
 
-.education-content .content::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    z-index: 100;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
-    transition: .5s;
+/* ================= TIMELINE ================= */
+.education-box {
+    border-left: 3px solid red;
+    padding-left: 2rem;
 }
 
+.education-content {
+    margin-bottom: 2rem;
+}
 
-.education-content h3{
-    position: relative;
-    font-size: 20px;
+.education-content .content {
+    border: 2px solid red;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.education-content .year {
+    font-size: 14px;
+    margin-bottom: .5rem;
+}
+
+.education-content h3 {
+    font-size: 18px;
     color: #00abf0;
-
+    margin-bottom: .5rem;
 }
 
-.education-content h3::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
+.education-content p {
+    font-size: 14px;
+    line-height: 1.7;
 }
 
-
-
-.education-content p{
-    position: relative;
-    font-size: 13px;
-
+/* ================= BUTTON ================= */
+.btn-box {
+    margin-top: 3rem;
 }
 
-.education-content p::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
-}
-
-.education .heading{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-}
-
-.education .heading::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
-}
-
-span{
-    color: #00abf0;
-}
-
-.education-content .year{
-    position: relative;
-    font-size: 15px;
-}
-
-.education-content .year::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 1.7s;
-}
-
-
-
-
-.home-content .btn-box{
-    width: 345px;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-}
-
-.home-content .btn-box::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: #041827;
-    animation: showRight 1s ease forwards;
-    animation-delay: 2.3s;
-    z-index: 2;
-}
-
-
-.btn-box a{
-    position: relative;
+.btn-box a {
+    width: 150px;
+    height: 45px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px;
-    height: 50px;
     background: #00abf0;
-    border: 2px solid #00abf0;
-    border-radius: 8px;
-    font-size: 19px;
     color: #041827;
+    border-radius: 8px;
     text-decoration: none;
     font-weight: 600;
-    letter-spacing: 1px;
-    z-index: 1;
-    overflow: hidden;
-    transition: .5s;
 }
 
-.btn-box a:hover{
-    color: #00abf0;
-}
+/* ================= MOBILE ================= */
+@media (max-width: 750px) {
 
-.btn-box a:nth-child(2){
-    background: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover{
-    color: #041827;
-}
-
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
-}
-
-.btn-box a::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0%;
-    height: 100%;
-    background: #041827;
-    z-index: -1;
-    transition: .5s;
-}
-
-.btn-box a:hover:before{
-    width: 100%;
-}
-
-
-
-/*KEYFRAMES ANIMATIONS*/
-
-@keyframes showRight {
-    100%{
-        width: 0;
+    .header {
+        display: none;
     }
-    
-}
-@keyframes manipActiveHover {
-    100%{
-    pointer-events: auto;
-    
-}
-}
 
-@media screen and (max-width: 750px) {
-                
+    .education {
+        padding-top: 2rem;
+    }
 
-                /* REMOVE ALL ANIMATIONS */
-                *,
-                *::before,
-                *::after {
-                    animation: none !important;
-                    transition: none !important;
-                }
+    .education-box {
+        border-left: none;
+        padding-left: 0;
+    }
 
-                /* REMOVE HEADER (OPTIONAL – KEEP IF YOU WANT) */
-                .header {
-                    display: none;
-                }
+    .education-content .content {
+        border: none;
+        padding: 0;
+    }
 
-                /* REMOVE SIDE LINE */
-                .education-column .education-box {
-                    border-left: none;
-                }
+    .education-content h3 {
+        font-size: 14px;
+    }
 
-                /* REMOVE CONTENT BOXES */
-                .education-content .content {
-                    border: none;
-                    padding: 0;
-                    margin-bottom: 1.5rem;
-                }
+    .education-content p {
+        font-size: 12px;
+        text-align: justify;
+    }
 
-                /* REMOVE OVERLAY BLOCKERS */
-                .education-content .content::before,
-                .education-column .education-box::before,
-                .education-content h3::before,
-                .education-content p::before,
-                .education-content .year::before,
-                .education .heading::before {
-                    display: none;
-                }
+    .education-content .year {
+        font-size: 12px;
+    }
 
-                /* RESET LAYOUT PADDING */
-                .education {
-                    padding-left: 1rem;
-                    padding-right: 1rem;
-                    padding-top: 2rem;
-                }
-
-                /* YEAR */
-                .education-content .year {
-                    font-size: 12px;
-                    margin-bottom: 4px;
-                }
-
-                /* TITLE */
-                .education-content h3 {
-                    font-size: 14px;
-                    margin-bottom: 6px;
-                }
-
-                /* PARAGRAPH */
-                .education-content p {
-                    font-size: 12px;
-                    line-height: 1.6;
-                    text-align: justify;
-                    text-justify: inter-word;
-                }
-
-                /* REMOVE ICON POSITION ISSUE */
-                i {
-                    position: static;
-                }
-
-                /* BUTTON SIZE */
-                .btn-box a {
-                    width: 120px;
-                    height: 40px;
-                    font-size: 14px;
-                }
+    .btn-box a {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
 }
