@@ -168,3 +168,30 @@ body{
 .navbar-toggler:not(.collapsed) {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
+
+/* MOBILE NAVBAR CENTER FIX */
+@media (max-width: 767px) {
+
+    /* Center the whole menu */
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    /* Center nav list */
+    .navbar-nav {
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Remove side margins & center links */
+    .navbar-nav .nav-link {
+        margin: 10px 0 !important;
+        padding: 8px 0;
+        text-align: center;
+    }
+
+    /* REMOVE DESKTOP RIGHT MARGIN ON MOBILE */
+    .navbar-nav .me-5 {
+        margin-right: 0 !important;
+    }
+}
