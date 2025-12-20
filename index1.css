@@ -170,7 +170,7 @@ body{
 }
 
 /* MOBILE NAVBAR CENTER FIX */
-@media (max-width: 767px) {
+@media (max-width: 991px) {
 
     /* Center the whole menu */
     .navbar-collapse {
