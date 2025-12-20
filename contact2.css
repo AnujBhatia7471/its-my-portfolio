@@ -280,3 +280,47 @@ textarea {
         margin-top: 0;
     }
 }
+@media screen and (max-width: 750px) {
+
+    /* Pull everything up */
+    body {
+        display: block;
+    }
+
+    .div1 {
+        margin-bottom: 10px;   /* reduce gap below heading */
+    }
+
+    h1 {
+        margin-top: 15px;
+        margin-bottom: 10px;
+    }
+
+    /* Force form to sit right under heading */
+    .container {
+        margin-top: 0 !important;
+        padding-top: 0 !important;
+    }
+
+    .container form {
+        margin-top: 0 !important;
+    }
+
+    /* Compact inputs spacing */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        margin-bottom: 10px;
+    }
+
+    /* Send button tighter */
+    .button {
+        margin-top: 10px;
+    }
+
+    /* HOME button VERY close */
+    .move {
+        padding-top: 4px !important;
+        margin-top: 0 !important;
+    }
+}
