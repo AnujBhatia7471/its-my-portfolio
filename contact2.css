@@ -194,6 +194,7 @@ textarea {
 
 .btn-box a:hover{
     color: #00abf0;
+    background-color: #041827;
 }
 
 .btn-box a::before{
